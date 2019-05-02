@@ -1,0 +1,41 @@
+input-view {
+  match: Answer(this) {
+    to-input: UpdateGame(action)
+  }
+  
+  message {
+    template ("[#{value(action.state.say)} ][#{value(action.state.lastOption.onSelect.say)} ]#{value(action.state.currentScene.textToDisplay)}") {
+      speech ("[#{value(action.state.say)} ][#{value(action.state.lastOption.onSelect.say)} ]#{value(action.state.currentScene.textToSpeak)}")
+    }
+  }
+  render {
+    if (size(action.state.currentScene.options) > 0) {
+      selection-of (action.state.currentScene.options) {
+        where-each (option) {
+          cell-card {
+            slot2 {
+              content {
+                primary {
+                  template ("[#{value(option.alias)}. ]#{value(option.text)}")
+                }
+              }
+            }
+          }
+        }
+      }
+    } else {
+      form {
+        elements {
+          text-input {
+            id (answer)
+            type (Answer)
+          }
+        }
+        on-submit {
+          goal: Answer
+          value: viv.core.FormElement(answer)
+        }
+      }
+    }
+  }
+}

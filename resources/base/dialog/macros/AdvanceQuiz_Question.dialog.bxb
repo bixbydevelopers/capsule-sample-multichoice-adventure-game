@@ -1,0 +1,19 @@
+template-macro-def (advance-game-scene) {
+  params {
+    param (scenesLeft) {
+      type (core.Integer)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    if (scenesLeft == 0) {
+      template ("Do you want to see how you did?")
+    } else-if (scenesLeft == 1) {
+      template ("Do you want to enter the last scene?")
+    } else {
+      template ("Do you want to enter the next scene?")
+
+    }
+  }
+}

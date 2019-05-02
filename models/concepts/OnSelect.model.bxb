@@ -1,0 +1,15 @@
+structure (OnSelect) {
+  property (goto) {
+    description ("Destination scene name")
+    type (core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (say) {
+    description ("What to say if the user chose this option")
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+
+}

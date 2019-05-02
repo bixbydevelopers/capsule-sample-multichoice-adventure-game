@@ -1,0 +1,35 @@
+layout-macro-def(game-summary) {
+  params {
+    param (game) {
+      type (Game)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    cell-card {
+      slot1 {
+        if (exists(game.image.url)) {
+          image {
+            shape (Square)
+            url {
+              template ("#{value(game.image.url)}")
+            }
+          }
+        }
+      }
+      slot2 {
+        content {
+          primary {
+            template ("#{value(game.title)}")
+          }
+          secondary {
+            template ("#{number(size(game.scenes))} scenes")
+          }
+        }
+      }
+    }
+
+  }
+
+}
