@@ -23,16 +23,9 @@ You can easily customize this capsule with your own game without any development
 * Open the simulator and give it a try!
 
 ## How to try
-Ask Bixby to start a game, try these:
+Ask Bixby to start a game:
 ```
-Start a game (Bixby asks you which game you want to start)
-
-Start a states game (Bixby starts a game about US States)
-
-Start a presidents game (Bixby starts a game about US presidents)
-
-Start a funny game (Bixby starts a game that is funny)
-
+Start a game
 ```
 
 # How to customize
