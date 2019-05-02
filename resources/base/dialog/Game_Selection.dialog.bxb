@@ -1,4 +1,0 @@
-dialog (Selection) {
-  match: Game
-  template ("Which game do you want to take?")
-}
