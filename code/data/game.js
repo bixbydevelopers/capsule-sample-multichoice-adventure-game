@@ -27,7 +27,7 @@ module.exports =
     image: {
       url: '/images/Dogs.jpg'
     }, //optional
-    introductory: "Strong men kicking you! That's all you remember. Not your name, not your job, family or friends. You only remember a big fight, getting unconscious and waking up in a hallway...",
+    introductory: "Strong men kicking you! That's all you remember. Not your name, not your job, family or friends. You only remember a big fight, being knocked unconscious and then waking up in a hallway...",
     endSceneName: "Last Scene",
     invalidInputMessage: "I did not understand that.",
     scenes: [
@@ -51,7 +51,7 @@ module.exports =
       },
       {
           name: "Dark Room",
-          textToDisplay: "Nothing much you can see here. You notice some curious shades in the corner of the room. What do you want to do?",
+          textToDisplay: "Nothing much you can see here. You notice some curious shadows in the corner of the room. What do you want to do?",
           options: [
             {
               text: "Go back to the hallway",
@@ -61,35 +61,35 @@ module.exports =
               }
             },
             {
-              text: "Check out the shades",
+              text: "Check out the shadows",
               onSelect: {
                   goto: "Behind the curtain",
-                  say: "You walk slowly to the corner of the room, getting closer to the shades dancing in front of you until you figure out what they are: curtains on a window."
+                  say: "You walk slowly to the corner of the room, getting closer to the shadows dancing in front of you until you figure out what they are: curtains on a window."
               }
             },
           ],
       },
       {
           name: "Behind the curtain",
-          textToDisplay: "The window is open and a cool breeze coming in. What do you want to do?",
+          textToDisplay: "The window is open and a cool breeze is coming in. What do you want to do?",
           options: [
             {
                 text: "Go back to the hallway",
                 onSelect: {
-                    goto: "Hallway", say: "You go back to the Hallway."
+                    goto: "Hallway", say: "You go back to the hallway."
                 }
             },
             {
                 text: "Look out the window",
                 onSelect: {
-                    goto: "Backyard", say: "You lean to look out but, oops, you lean to much and fall in the backyard"
+                    goto: "Backyard", say: "You lean to look out but, oops, you lean too much and fall into the backyard."
                 },
             }
           ],
       },
       {
           name: "Backyard",
-          textToDisplay: "This is a small backyard. The house door is right next to you and you can see a window too. What do you want to do?",
+          textToDisplay: "This is a small backyard. The house door is right next to you and you can see a window, too. What do you want to do?",
           options: [
             {
                 text: "Go through the door",
@@ -98,7 +98,7 @@ module.exports =
                 }
              },
             {
-                text: "Climb the window",
+                text: "Climb through the window",
                 onSelect: {
                     goto: "Dark room",  say: "You climb the window and go back inside the house and find yourself in a dark room."
                 },
@@ -118,7 +118,7 @@ module.exports =
           {
             text: "Go back to the hallway",
             onSelect: {
-                goto: "Hallway", say: "You go back to the Hallway."
+                goto: "Hallway", say: "You go back to the hallway."
             },
           },
           {
@@ -131,7 +131,7 @@ module.exports =
       },
       {
         name: "Last Scene",
-        textToDisplay: "You try running out of the gate in the darkness of the night but right as you pass the gate you slip and fall down and lose conscience. Not sure how long you stay like that but when you wake up everything is familiar again. You are in your comfortable bed and already forgot your nightmare. Good job!",
+        textToDisplay: "You try running out of the gate in the darkness of the night but right as you pass the gate you slip and fall down and lose consciousness. Not sure how long you stay like that, but when you wake up everything is familiar again. You are in your comfortable bed and already forgot your nightmare. Good job!",
       }
     ]
   }
