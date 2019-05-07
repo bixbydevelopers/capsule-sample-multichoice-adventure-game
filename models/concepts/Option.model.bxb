@@ -17,4 +17,10 @@ structure (Option) {
     min (Required) max (One)
     visibility (Private)
   }
+  property (tags) {
+    description (Labels attached to this option to help with matching an option by voice command)
+    type (core.Text)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
 }

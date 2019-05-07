@@ -21,7 +21,7 @@ layout-macro-def(game-summary) {
       slot2 {
         content {
           primary {
-            template ("#{value(game.title)}")
+            template ("#{value(game.name)}")
           }
           secondary {
             template ("#{number(size(game.scenes))} scenes")

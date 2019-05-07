@@ -1,6 +1,6 @@
 structure (Game) {
 
-  property (title) {
+  property (name) {
     type (core.Text)
     min (Required) max (One)
     visibility (Private)

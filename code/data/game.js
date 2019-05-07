@@ -23,9 +23,9 @@ module.exports =
   
   // Start of game
   {
-    title: "Mystery Rooms",
+    name: "Mystery Rooms",
     image: {
-      url: '/images/Dogs.jpg'
+      url: '/images/mysteryRooms.jpeg'
     }, //optional
     introductory: "Strong men kicking you! That's all you remember. Not your name, not your job, family or friends. You only remember a big fight, being knocked unconscious and then waking up in a hallway...",
     endSceneName: "Last Scene",
@@ -33,6 +33,9 @@ module.exports =
     scenes: [
       {
           name: "Hallway",
+          image: {
+            url: '/images/Hallway.jpeg'
+          }, //optional
           textToDisplay: "There are two doors in the hallway. One on the left and one on the right. What do you want to do?",
           options: [
             {
@@ -51,6 +54,9 @@ module.exports =
       },
       {
           name: "Dark Room",
+          image: {
+            url: '/images/DarkRoom.jpeg'
+          }, //optional
           textToDisplay: "Nothing much you can see here. You notice some curious shadows in the corner of the room. What do you want to do?",
           options: [
             {
@@ -71,6 +77,9 @@ module.exports =
       },
       {
           name: "Behind the curtain",
+          image: {
+            url: '/images/BehindTheCurtain.jpeg'
+          }, //optional
           textToDisplay: "The window is open and a cool breeze is coming in. What do you want to do?",
           options: [
             {
@@ -89,6 +98,9 @@ module.exports =
       },
       {
           name: "Backyard",
+          image: {
+            url: '/images/Backyard.jpeg'
+          }, //optional
           textToDisplay: "This is a small backyard. The house door is right next to you and you can see a window, too. What do you want to do?",
           options: [
             {
@@ -113,6 +125,9 @@ module.exports =
       },
       {
         name: "Bright Room",
+        image: {
+          url: '/images/BrightRoom.jpeg'
+        }, //optional
         textToDisplay: "This room is empty. With a door going to the backyard. What do you want to do?",
         options: [
           {
@@ -131,6 +146,9 @@ module.exports =
       },
       {
         name: "Last Scene",
+        image: {
+          url: '/images/InBed.jpeg'
+        }, //optional
         textToDisplay: "You try running out of the gate in the darkness of the night but right as you pass the gate you slip and fall down and lose consciousness. Not sure how long you stay like that, but when you wake up everything is familiar again. You are in your comfortable bed and already forgot your nightmare. Good job!",
       }
     ]

@@ -5,6 +5,12 @@ structure (Scene) {
     min (Required) max (One)
     visibility (Private)
   }
+  property (image) {
+    description (Image describing this game)
+    type (image.Image)
+    min (Optional) max (One)
+    visibility (Private)
+  }
   property (tags) {
     description (Labels attached to this scene to enable searching for the scene by keyword)
     type (core.Text)

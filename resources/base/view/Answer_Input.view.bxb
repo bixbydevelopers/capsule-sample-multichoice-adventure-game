@@ -11,6 +11,13 @@ input-view {
   render {
     if (size(action.state.currentScene.options) > 0) {
       selection-of (action.state.currentScene.options) {
+        header {
+          layout-macro ("scene-details") {
+            param (scene) {
+              expression (action.state.currentScene)
+            }
+          }
+        }
         where-each (option) {
           cell-card {
             slot2 {

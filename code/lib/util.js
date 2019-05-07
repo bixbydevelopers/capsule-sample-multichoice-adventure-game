@@ -10,7 +10,7 @@ function buildGameFromJson(gameJson) {
     scenes.push(buildSceneFromJson(gameJson.scenes[i], i))
   }
   return {
-    title: gameJson.title,
+    name: gameJson.name,
     image: gameJson.image,
     endSceneName: gameJson.endSceneName,
     introductory: gameJson.introductory,
@@ -35,6 +35,7 @@ function buildSceneFromJson(sceneJson, index) {
     }
     var scene = {
       name: sceneJson.name,
+      image: sceneJson.image,
       textToDisplay: sceneJson.textToDisplay,
       textToSpeak: sceneJson.textToDisplay + "..." + buildOptionsToSpeak(options),
       options: options,

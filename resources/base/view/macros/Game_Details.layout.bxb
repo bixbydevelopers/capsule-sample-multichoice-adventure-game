@@ -10,7 +10,7 @@ layout-macro-def(game-details) {
     image-card {
       title-area {
         slot1 {
-          text ("#{value(game.title)}")
+          text ("#{value(game.name)}")
         }
         slot2 {
           single-line {

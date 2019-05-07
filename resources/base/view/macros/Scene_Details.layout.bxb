@@ -1,0 +1,22 @@
+layout-macro-def(scene-details) {
+  params {
+    param (scene) {
+      type (Scene)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    image-card {
+      title-area {
+        slot1 {
+          text ("#{value(scene.name)}")
+        }
+      }
+      image-url {
+        template ("[#{value(scene.image.url)}]")
+      }
+    }
+  }
+
+}
