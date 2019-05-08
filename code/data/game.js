@@ -43,12 +43,14 @@ module.exports =
                 onSelect: {
                     goto: "Dark Room", say:"You go to the room on your left."
                 },
+                tags: ["Go to the room on my left", "Go to room on my left", "Room on my left", "Go to left room"]
             },
             {
                 text: "Go to the room on your right",
                 onSelect: {
                     goto: "Bright Room", say:"You go to the room on your right."
-                }
+                },
+                tags: ["Go to the room on my right", "Go to room on my right", "Room on my right", "Go to right room"]
             },
           ],
       },
@@ -64,14 +66,16 @@ module.exports =
               onSelect: {
                   goto: "Hallway",
                   say: "You walk back to the hallway."
-              }
+              },
+              tags: ["Go back to hallway", "Go to hallway", "Back to hallway", "hallway"]
             },
             {
               text: "Check out the shadows",
               onSelect: {
                   goto: "Behind the curtain",
                   say: "You walk slowly to the corner of the room, getting closer to the shadows dancing in front of you until you figure out what they are: curtains on a window."
-              }
+              },
+              tags: ["Check the shadows", "Check out shadows", "Check shadows", "Go to shades"]
             },
           ],
       },
@@ -86,14 +90,16 @@ module.exports =
                 text: "Go back to the hallway",
                 onSelect: {
                     goto: "Hallway", say: "You go back to the hallway."
-                }
+                },
+                tags: ["Go back to hallway", "Go to hallway", "Back to hallway", "hallway"]
             },
             {
                 text: "Look out the window",
                 onSelect: {
                     goto: "Backyard", say: "You lean to look out but, oops, you lean too much and fall into the backyard."
                 },
-            }
+                tags: ["Check out the window", "Go to window", "Go to the window", "window"]
+              }
           ],
       },
       {
@@ -107,13 +113,15 @@ module.exports =
                 text: "Go through the door",
                 onSelect: {
                   goto: "Bright room", say: "You go back into the house and find yourself in a bright room."
-                }
+                },
+                tags: ["Go through door", "Get out of the door", "The door", "door"]
              },
             {
                 text: "Climb through the window",
                 onSelect: {
                     goto: "Dark room",  say: "You climb the window and go back inside the house and find yourself in a dark room."
                 },
+                tags: ["Climb the window", "Climb window", "The window", "window"]
             },
             {
                 text: "Run out of the gate",
@@ -135,12 +143,14 @@ module.exports =
             onSelect: {
                 goto: "Hallway", say: "You go back to the hallway."
             },
+            tags: ["Go back to hallway", "Go to hallway", "Back to hallway", "hallway"]
           },
           {
             text: "Go to the backyard",
             onSelect: {
                 goto: "Backyard", say: "You go to the backyard."
-            }
+            },
+            tags: ["Go to backyard", "backyard", "Back to backyard"]
           }
         ],
       },

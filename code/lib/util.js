@@ -28,6 +28,7 @@ function buildSceneFromJson(sceneJson, index) {
       for (var i=0; i<sceneJson.options.length; i++) {
         options.push({
           text: sceneJson.options[i].text,
+          tags: sceneJson.options[i].tags,
           alias: String.fromCharCode('A'.charCodeAt(0) + i),
           onSelect: sceneJson.options[i].onSelect,
         })
@@ -77,11 +78,23 @@ function buildAcceptedAnswers(answer, options) {
 //return the answer from alias
 function findOption(options, answer) {
   for (var i=0; i<options.length; i++) {
-    if (answer.toLowerCase() == options[i].alias.toLowerCase() || answer.toLowerCase() == options[i].text.toLowerCase()) {
+    if (answer.toLowerCase() == options[i].alias.toLowerCase()
+        || answer.toLowerCase() == options[i].text.toLowerCase()
+        || matchTag(options[i].tags, answer)) {
       return options[i]
     }
   }
   return null
+}
+
+//returns true if there is an element in a list of tags that matches a specific tag
+function matchTag(tags, tag) {
+   for (var i=0; i<tags.length; i++) {
+     if (tag.toLowerCase() == tags[i].toLowerCase()) {
+        return true
+     }
+   }
+   return false
 }
 
 //return the answer from alias
