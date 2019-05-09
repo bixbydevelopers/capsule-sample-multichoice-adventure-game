@@ -1,0 +1,46 @@
+structure (State) {
+  description (Holds the game state.)
+  features {
+    transaction
+  }
+
+  property (game) {
+    type (Game)
+    min (Required) max (One)
+    visibility (Private)
+  }
+
+  property (currentScene) {
+    type (Scene)
+    min (Required) max (One)
+    description(Question to ask in current state)
+    visibility (Private)
+  }
+
+  property (lastOption) {
+    type (Option)
+    min (Optional) max (One)
+    description(User's last sceneState)
+    visibility (Private)
+  }
+
+  property (started) {
+    type (core.Boolean)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+
+  property (completed) {
+    type (core.Boolean)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+
+  property (say) {
+    type (core.Text)
+    min (Optional) max (One)
+    description(Should the introductory be read or not?)
+    visibility (Private)
+  }
+
+}

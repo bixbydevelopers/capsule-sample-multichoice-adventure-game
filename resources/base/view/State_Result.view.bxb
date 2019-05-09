@@ -1,0 +1,14 @@
+result-view {
+  match {
+    State(state)
+  }
+
+  message {
+    template ("[#{value(state.lastOption.onSelect.say)} ]#{value(state.currentScene.textToDisplay)}") {
+      speech ("[#{value(state.lastOption.onSelect.say)} ]#{value(state.currentScene.textToSpeak)}")
+    }
+  }
+  render {
+   
+  }
+}

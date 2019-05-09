@@ -1,0 +1,13 @@
+dialog (Concept) {
+  match {
+    Game (this)
+  }
+  switch (plural(this)) {
+    case (One) {
+      template (game)
+    }
+    default {
+      template (games)
+    }
+  }
+}

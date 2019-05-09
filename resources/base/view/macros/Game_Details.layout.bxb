@@ -1,0 +1,27 @@
+layout-macro-def(game-details) {
+  params {
+    param (game) {
+      type (Game)
+      min (Required)
+      max (One)
+    }
+  }
+  content {
+    image-card {
+      title-area {
+        slot1 {
+          text ("#{value(game.name)}")
+        }
+        slot2 {
+          single-line {
+            text ("#{number(size(game.scenes))} scenes")
+          }
+        }
+      }
+      image-url {
+        template ("[#{value(game.image.url)}]")
+      }
+    }
+  }
+
+}

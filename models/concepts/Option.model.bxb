@@ -1,0 +1,26 @@
+structure (Option) {
+  description("An option presented to the user for a multi choice question")
+  property (text) {
+    description ("Text description of the option")
+    type (Answer)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (alias) {
+    description("Alias used for the option (e.g. first option 'A', second option 'B', etc)")
+    type (core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (onSelect) {
+    type (OnSelect)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (tags) {
+    description (Labels attached to this option to help with matching an option by voice command)
+    type (core.Text)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+}

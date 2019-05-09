@@ -1,0 +1,44 @@
+structure (Game) {
+
+  property (name) {
+    type (core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+
+  property (introductory) {
+    description (What to say as introductory to users that just start the game)
+    type (core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+
+  property (scenes) {
+    description (Scenes in this game)
+    type (Scene)
+    min (Required) max (Many)
+    visibility (Private)
+  }
+
+  property (endSceneName) {
+    description (Game ends when user enters this scene)
+    type (core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+
+  property (image) {
+    description (Image describing this game)
+    type (image.Image)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+
+  property (invalidInputMessage) {
+    description (What to say if the user utterance is not understood)
+    type (core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+
+}

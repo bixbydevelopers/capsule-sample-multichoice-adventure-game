@@ -1,0 +1,38 @@
+structure (Scene) {
+  property (name) {
+    description(Name of the scene)
+    type (core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (image) {
+    description (Image describing this game)
+    type (image.Image)
+    min (Optional) max (One)
+    visibility (Private)
+  }
+  property (tags) {
+    description (Labels attached to this scene to enable searching for the scene by keyword)
+    type (core.Text)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+  property (textToDisplay) {
+    description(Question to be displayed when user enters this scene)
+    type (core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (textToSpeak) {
+    description(Question formatted for speech channel when user enters this scene)
+    type (core.Text)
+    min (Required) max (One)
+    visibility (Private)
+  }
+  property (options) {
+    description(Options provided to the user)
+    type (Option)
+    min (Optional) max (Many)
+    visibility (Private)
+  }
+}
