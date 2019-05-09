@@ -27,7 +27,7 @@ module.exports =
     image: {
       url: '/images/mysteryRooms.jpeg'
     }, //optional
-    introductory: "Strong men kicking you! That's all you remember. Not your name, not your job, family or friends. You only remember a big fight, being knocked unconscious and then waking up in a hallway...",
+    introductory: "A punch in the gut! That's all you remember. Not your name, not your job, family or friends. You only remember a big fight, being knocked unconscious and then waking up in a hallway...",
     endSceneName: "Last Scene",
     invalidInputMessage: "I did not understand that.",
     scenes: [
