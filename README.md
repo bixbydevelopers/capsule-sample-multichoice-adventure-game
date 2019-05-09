@@ -30,9 +30,7 @@ Start a game
 
 # How to customize
 * Change the capsule id to reflect your organization and your content. The capsule id is defined in `capsule.bxb` file. 
-* Create your own game scenes and answers by editing the `code/data/game.js` file.
-* You can customize the Game NoResult dialog (`resources/base/dialog/Game_NoResult.dialog.bxb`)
-* You can customize the Game Result dialog by directly modifying the `resources/base/dialog/Game_Result.dialog.bxb` or by modifying the dialog macros under `/dialog/macros/`.
+* Create your own game scenes by editing the `code/data/game.js` file.
 * The training in this sample capsule is basic. You will likely need to add additional training for your game
 * Have fun!
 

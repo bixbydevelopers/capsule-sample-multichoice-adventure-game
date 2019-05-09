@@ -26,7 +26,7 @@ structure (Scene) {
   property (textToSpeak) {
     description(Question formatted for speech channel when user enters this scene)
     type (core.Text)
-    min (Optional) max (One)
+    min (Required) max (One)
     visibility (Private)
   }
   property (options) {

@@ -15,5 +15,8 @@ capsule {
   }
   runtime-flags {
     support-halt-effect-in-computed-inputs
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    no-fallback-to-result-collections
   }
-}
+ }
