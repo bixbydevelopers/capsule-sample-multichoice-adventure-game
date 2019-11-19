@@ -7,7 +7,7 @@ layout-macro-def(scene-details) {
     }
   }
   content {
-    image-card {
+    image-area {
       title-area {
         slot1 {
           text ("#{value(scene.name)}")
