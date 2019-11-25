@@ -1,21 +1,23 @@
 result-view {
-  match {
-    Game (game)
-  }
-
-  render {
-    if (size(game) == 1) {
-        layout-macro ("game-details") {
-          param(game) {
-            expression (game)
-          }
-        }
-    } else {
-        layout-macro ("game-summary") {
-          param(game) {
-            expression (game)
-          }
-        }
-    }
-  }
+	match {
+		Game (game)
+	}
+	
+	render {
+		if (size(game) == 1) {
+			layout-macro ("game-details") {
+				param(game) {
+					expression (game)
+				}
+			}
+		} else {
+			layout-macro ("game-summary") {
+				param(game) {
+					if (exists(game) && size(game) == 1) { //should always be true
+						expression (game)
+					}
+				}
+			}
+		}
+	}
 }
