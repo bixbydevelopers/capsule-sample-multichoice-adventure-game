@@ -7,7 +7,7 @@ structure (Scene) {
   }
   property (image) {
     description (Image describing this game)
-    type (image.Image)
+    type (Image)
     min (Optional) max (One)
     visibility (Private)
   }
