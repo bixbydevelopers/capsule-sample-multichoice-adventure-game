@@ -1,0 +1,4 @@
+structure (Image) {
+  extends (viv.core.BaseImage)
+  description (core.BaseImage has a property `url` of type text)
+}

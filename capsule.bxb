@@ -9,18 +9,11 @@ capsule {
     import (viv.core) { 
       as (core) 
     }
-    import (viv.image) {
-      as (image) version (2.12.10)
-    }
   }
-  runtime-flags {
-    support-halt-effect-in-computed-inputs
-    concepts-inherit-super-type-features
-    modern-prompt-rejection
-    no-fallback-to-result-collections
-    no-filtering-with-validation
-    modern-default-view-behavior
-    use-input-views-for-selection-list-detail
+  runtime-version (2){
+    overrides {
+      no-fallback-to-result-collections (true)
+    }
   }
   store-countries {
     all
