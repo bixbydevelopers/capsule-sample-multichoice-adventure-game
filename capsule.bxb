@@ -10,7 +10,7 @@ capsule {
       as (core) 
     }
   }
-  runtime-version (2){
+  runtime-version (8){
     overrides {
       no-fallback-to-result-collections (true)
     }
